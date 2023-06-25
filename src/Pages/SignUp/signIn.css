@@ -1,0 +1,98 @@
+@import url('../../index.css');
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signin-container{
+    height: 100vh;
+}
+
+.form-container{
+    width: 17.5rem;
+}
+
+.form-container > h1 {
+    margin-bottom: 1rem;
+}
+
+.form-container > h4 {
+    margin-bottom: 2rem;
+}
+
+form > button {
+    margin-bottom: 2rem;
+}
+
+.login-options-container > img {
+    cursor: pointer;
+}
+
+.checkbox-fieldset {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 2rem;
+    height: 2rem !important;
+    border: 2px solid var(--color-text-light);
+    background-color: #F2F2F2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    color: var(--color-text);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+input[type='checkbox']:after {
+    content: url('../../assets/check.svg');
+    display: none;
+}
+
+input[type='checkbox']:checked:after {
+    display: block;
+}
+
+.login-h4 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.login-h4::after,.login-h4::before {
+    content: "";
+    display: block;
+    width: 4.5rem;
+    height: 0.125rem;
+    background: #CFCFCF;
+}
+
+.login-options-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*================== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+
+}
+
+/*================= MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+    .illustration{
+        display: none;
+    }
+}
+
+  
+ 

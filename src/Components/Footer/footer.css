@@ -1,0 +1,19 @@
+@import url('../../index.css');
+
+footer {
+  width: 100%;
+  background-color: var(--color-bg);
+  padding: 2rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  cursor: pointer;
+}

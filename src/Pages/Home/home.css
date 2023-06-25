@@ -1,0 +1,52 @@
+@import url('../../index.css');
+
+.card-container {
+  margin-top: 9rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border: 2px solid var(--color-text-light);
+  padding: 1rem;
+}
+
+.flag {
+  width: 8rem;
+  height: 6rem;
+}
+
+/*================== MEDIA QUERIES (MEDIUM DEVICES) ============== */
+@media screen and (max-width: 1024px) {
+  
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*================= MEDIA QUERIES (SMALL DEVICES) ================ */
+@media screen and (max-width: 600px) {
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .flag {
+    width: 3rem;
+    height: 2.875rem;
+  }
+
+  .data-text>h3 {
+    font-size: 1rem;
+  }
+
+  .data-text>p {
+    font-size: 0.8rem;
+  }
+}
